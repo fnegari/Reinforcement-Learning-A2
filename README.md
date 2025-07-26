@@ -37,7 +37,11 @@ We implement:
 
 **Sample Output (Value Iteration):**
 
-
+[[ 3.42 4.15 4.88 5.12 6.73]
+[ 2.89 3.52 3.94 4.02 4.88]
+[ 2.21 2.88 3.12 3.22 3.55]
+[ 1.72 2.11 2.32 2.42 2.63]
+[ 1.42 1.92 2.11 2.19 2.37]]
 ---
 
 ## **2. Part 2 – Monte Carlo Methods**
@@ -63,4 +67,57 @@ The discount factor:
 ---
 
 ### **2.2 Sample Output (MC-ES Value Function)**
+[[-1.64 -1.79 -1.91 -1.83 -1.67]
+[-0.87 -1.31 -1.49 -1.33 -0.87]
+[ 0.00 -0.71 -1.12 -0.80 0.00]
+[-0.16 -0.72 -1.15 -1.14 -0.77]
+[ 0.00 -0.62 -1.22 -1.45 -1.44]]
+
+---
+
+## **3. Repository Structure**
+
+
+Assignment2/
+├── part1.py # Code for Part 1 (Bellman, Policy Iteration, Value Iteration)
+├── part2.py # Code for Part 2 (MC-ES, ϵ-soft, Behaviour Policy)
+├── figures/ # Saved heatmaps and policy plots
+│ ├── policy1.png
+│ ├── policy2.png
+│ ├── policy3.png
+│ ├── value_bellman.png
+│ ├── value_policy_iteration.png
+│ └── value_value_iteration.png
+├── report/
+│ ├── main.tex # LaTeX source of the final report
+│ └── Reinforcement-Learning-A2.pdf # Compiled report (PDF)
+└── README.md # Project documentation
+
+---
+
+## **4. Setup Instructions**
+
+### **4.1 Install Dependencies**
+```bash
+pip install numpy matplotlib seaborn
+4.2 Run the Code
+For Part 1:
+
+python part1.py
+For Part 2:
+python part2.py
+6. Reports
+Full details of the methods, results, and analysis are provided in report/Reinforcement-Learning-A2.pdf.
+
+The LaTeX source is included for reproducibility.
+
+
+7. Authors
+Fatemeh Negari
+
+Saba Tamizi
+
+8. License
+This repository is part of Reinforcement Learning: Assignment 2 (2025) and is intended solely for educational purposes.
+
 
