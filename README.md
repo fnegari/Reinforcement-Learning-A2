@@ -36,3 +36,31 @@ We implement:
   Policies are displayed as arrows (↑, ↓, ←, →) for each grid cell.
 
 **Sample Output (Value Iteration):**
+
+
+---
+
+## **2. Part 2 – Monte Carlo Methods**
+
+### **2.1 Overview**
+In **Part 2**, we use Monte Carlo methods to evaluate and improve policies in a modified gridworld environment:
+- Certain cells are **terminal states** (black squares).
+- Rewards:
+  - **−0.2** for valid moves,
+  - **−0.5** for attempts to move outside the grid,
+  - **0** for terminal states.
+
+We implement:
+1. **Monte Carlo with Exploring Starts (MC-ES)**  
+2. **Monte Carlo with ϵ-soft Policy (ε = 0.1)**  
+3. **Behaviour Policy with Importance Sampling**
+
+The discount factor:
+\[
+\gamma = 0.95
+\]
+
+---
+
+### **2.2 Sample Output (MC-ES Value Function)**
+
